@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -23,19 +24,22 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="124.0" fitWidth="143.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fitHeight="136.0" fitWidth="157.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@../../CChannel.png" />
                      </image>
+                     <effect>
+                        <ColorAdjust hue="0.17" />
+                     </effect>
                   </ImageView>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                      <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" text="School of AID" textAlignment="CENTER">
                            <font>
-                              <Font name="System Bold" size="25.0" />
+                              <Font name="FreeMono Bold" size="25.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" text="A great project!" textAlignment="CENTER">
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="need help?" textAlignment="CENTER">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -46,8 +50,17 @@
                      <children>
                         <HBox alignment="BOTTOM_RIGHT" prefHeight="133.0" prefWidth="200.0" spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="79.0" styleClass="mybutton" stylesheets="@../../estilo.css" text="Die" />
-                              <Button layoutX="69.0" layoutY="2.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" styleClass="mybutton" stylesheets="@../../estilo.css" text="Live" />
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="79.0" styleClass="mybutton" stylesheets="@../../estilo.css" text="Die">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Button>
+                              <Button layoutX="69.0" layoutY="2.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" styleClass="mybutton" stylesheets="@../../estilo.css" text="Live">
+                                 <tooltip>
+                                    <Tooltip text="click me!" />
+                                 </tooltip>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Button>
                            </children>
                         </HBox>
                      </children>
